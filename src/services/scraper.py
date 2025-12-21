@@ -4,7 +4,7 @@ import re
 import mysql.connector
 from mysql.connector import Error
 from datetime import datetime
-from config import DB_CONFIG
+from src.config import DB_CONFIG
 
 def scrape_justjoinit_tech_counts(url='https://justjoin.it/job-offers/all-locations'):
     """Scrape JustJoin.it technology job counts"""
