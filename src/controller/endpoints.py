@@ -1,7 +1,6 @@
 from flask import jsonify
-from services.scraper import scrape_justjoinit_tech_counts, save_to_db
-from db.database import get_db_stats, get_tech_history
-from datetime import datetime
+from src.services.scraper import scrape_justjoinit_tech_counts, save_to_db
+from src.db.database import get_db_stats, get_tech_history
 
 def api_scrape():
     """load data from website endpoint"""

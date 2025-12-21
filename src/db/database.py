@@ -1,7 +1,6 @@
 import mysql.connector
 from mysql.connector import Error
 from config import DB_CONFIG
-from datetime import datetime
 
 
 def create_db_tables():
