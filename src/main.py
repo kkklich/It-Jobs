@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_cors import CORS
-from src.controller.endpoints import api_scrape, api_stats, api_tech_history
-from src.db.database import create_db_tables
+from controller.endpoints import api_scrape, api_stats, api_tech_history
+from db.database import create_db_tables
 
 app = Flask(__name__)
 CORS(app)
