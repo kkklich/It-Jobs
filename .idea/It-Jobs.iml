@@ -7,7 +7,7 @@
       <excludeFolder url="file://$MODULE_DIR$/.venv1" />
       <excludeFolder url="file://$MODULE_DIR$/.venv2" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.10 (It-Jobs) (3)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.10 (It-Jobs)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

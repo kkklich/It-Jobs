@@ -4,7 +4,13 @@ from src.controller.endpoints import api_scrape, api_stats, api_tech_history
 from src.db.database import create_db_tables
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={
+    r"/api/*": {
+        "origins": ["https://krzysztofklich.pl"],
+        "methods": ["GET"],
+        "allow_headers": ["Content-Type"]
+    }
+})
 
 # # API Routes
 @app.route('/api/stats', methods=['GET'])
