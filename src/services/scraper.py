@@ -34,8 +34,9 @@ def scrape_justjoinit_tech_counts(url='https://justjoin.it/job-offers/all-locati
                         tech_name = tech_name_elem.get_text(strip=True) if tech_name_elem else 'Unknown'
                     else:
                         href = link.get('href', '').split('/')[-1]
-                        tech_name = href.replace('-', ' ').title()
+                        tech_name = href.replace('-', ' ').lower()
 
+                    tech_name = tech_name.capitalize()
                     if count > 0 and tech_name:
                         tech_counts[tech_name] = count
 
